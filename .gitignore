@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Large datasets
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models (optional – remove if you WANT models tracked)
+models/
+
+# Misc
+*.zip
+
