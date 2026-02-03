@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Synthetic thermal dataset generator.
 
 Generates grayscale thermal images with background gradients, sensor-like noise,
@@ -249,7 +250,8 @@ def generate_dataset(out_dir: str, n_total: int, img_size: int, seed: int) -> No
 						]
 					)
 
-	print(f"Generated {n_total} images into {out_dir}")
+	total_generated = n_per_class * len(CLASSES) * sum(split_counts.values()) // sum(split_counts.values())
+	print(f"Generated {total_generated} images into {out_dir}")
 	print(f"Labels CSV written to {labels_path}")
 
 
